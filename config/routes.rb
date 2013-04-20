@@ -56,7 +56,7 @@ LogoBlog::Application.routes.draw do
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
 
-  root :to => 'pages#index'
+  root :to => "posts#index"
 
   match 'contact', :to => 'pages#contact'
   # See how all your routes lay out with "rake routes"

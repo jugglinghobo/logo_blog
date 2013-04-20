@@ -16,32 +16,29 @@ html, body {
   height: 101%;
   margin: 0;
   padding: 0;
-  background-color: black;
   background-image: url('background.jpg');
-  color: black;
-}
-
-html {
-  background-color: white;
+  background-repeat: repeat-x;
+  font-family:Georgia,serif;
+  font-variant: small-caps; text-transform: none; font-weight: 100; margin-bottom: 0;
 }
 
 #container {
   background-color: white;
-  margin-left: 200px;
-  margin-right: 200px;
-}
-
-#logo {
   margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  height: 100%;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 
-#logo img {
-  height: 100px;
-  width: 200px;
+#header {
+  padding-top: 20px;
+  text-align: center;
 }
 
 #container_navi {
-  background: #738924;
+  background: #5D695F;
   margin-top: 10px;
   padding-top: 20px;
   height: 40px;
@@ -54,4 +51,6 @@ html {
   padding: 10px 15px;
   background: #206397;
   color: #FFF;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }

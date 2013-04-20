@@ -8,8 +8,10 @@
 
   %body
     #container
-      #logo
-        = link_to image_tag("logo.jpg"), root_path
+      #header
+        //#logo
+        //  = link_to image_tag("logo.jpg"), root_path
+        %h1= "LogoBlog"
       #container_navi
         = render 'layouts/navigation'
       #container_content

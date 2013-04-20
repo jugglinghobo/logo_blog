@@ -1,13 +1,13 @@
-= form_for(@post) do |f|
+= simple_form_for @post do |f|
   - if @post.errors.any?
     #error_explanation
       %h2
-        = pluralize(@post.errors.count, "error") prohibited this post from being saved
+        = "#{pluralize(@post.errors.count, "error")} prohibited this post from being saved"
       %ul
         = @post.errors.full_messages.each do |msg|
           = msg
   .field
-    = f.input :content
+    = f.input :content, :as => :text
     = f.association :user
   .actions
     = f.submit
