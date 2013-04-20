@@ -16,6 +16,7 @@
         = render 'layouts/navigation'
       #container_content
         = yield
+      #padding
       
       .debug{:style => "margin-top: 100px"}
         - if Rails.env.development?# || Rails.env.production?

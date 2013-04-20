@@ -8,7 +8,7 @@ gem 'rails', '3.2.13'
 
 gem 'haml', '~> 4.0.2'
 gem "simple_form", "~> 2.1.0"
-
+gem "bcrypt-ruby", "~> 3.0.1"
 
 group :production do
   gem 'pg'
