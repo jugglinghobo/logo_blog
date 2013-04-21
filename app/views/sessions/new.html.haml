@@ -1,0 +1,12 @@
+= simple_form_for :session, :url => sessions_path do |f|
+  //- if @user.errors.any?
+  //  #error_explanation
+  //    = "#{pluralize(@user.errors.count, "error")} prohibited this user from being saved"
+  //    - @user.errors.full_messages.each do |msg|
+  //      = msg
+  .field
+    = f.input :email
+  .field
+    = f.input :password
+  .actions
+    = f.submit "Save"

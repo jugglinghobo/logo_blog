@@ -31,6 +31,14 @@ html, body {
   border-radius: 10px;
 }
 
+#notice {
+  position: fixed;
+  top: 40px;
+  right: 200px;
+  color: yellow;
+  background: red;
+}
+
 #header {
   padding-top: 20px;
   text-align: center;
