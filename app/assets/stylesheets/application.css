@@ -25,6 +25,10 @@ h1 {
   font-variant: small-caps; text-transform: none; font-weight: 100; margin-bottom: 0;
 }
 
+h3 {
+  margin: 10px;
+}
+
 a.button {
   background: #206397;
   color: #FFF;

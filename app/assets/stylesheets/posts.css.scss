@@ -25,4 +25,13 @@
 
 .post {
   margin: 20px;
+
+  fieldset a {
+    text-decoration: none;
+  }
+
+  fieldset:hover {
+    background: #DDD;
+  }
 }
+
