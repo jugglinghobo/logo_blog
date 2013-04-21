@@ -56,6 +56,16 @@ html, body {
   height: 40px;
 }
 
+.left {
+  display: inline;
+  float: left;
+}
+
+.right {
+  display: inline;
+  float: right;
+}
+
 #container_navi a{
   text-decoration: none;
   margin: 20px;
