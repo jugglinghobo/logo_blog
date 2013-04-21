@@ -25,6 +25,17 @@ h1 {
   font-variant: small-caps; text-transform: none; font-weight: 100; margin-bottom: 0;
 }
 
+a.button {
+  background: #206397;
+  color: #FFF;
+  text-decoration: none;
+  margin: 20px;
+  padding: 10px 15px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
 #container {
   background-color: white;
   margin-top: 20px;
@@ -58,14 +69,7 @@ h1 {
 }
 
 #container_navi a {
-  text-decoration: none;
-  margin: 20px;
   margin-bottom: 40px;
-  padding: 10px 15px;
-  background: #206397;
-  color: #FFF;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
 
 .left {

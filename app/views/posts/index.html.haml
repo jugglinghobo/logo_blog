@@ -1,16 +1,9 @@
-%table
-  - @posts.each do |post|
-    %tr
-      %td.header
-        = post.content
-      %td
-        = post.user
-      %td
-        = link_to 'Show', post
-      %td
-        = link_to 'Edit', edit_post_path(post)
-      %td
-        = link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
+#sorting
+  = link_to "newest", "#", :class => "button"
+  = link_to "most interesting", "#", :class => "button"
+  = link_to "other category", "#", :class => "button"
+- @posts.each do |post|
+  = render "post_box", :post => post
 
 - if signed_in?
   #action_box

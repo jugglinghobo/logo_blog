@@ -1,13 +1,13 @@
 - if signed_in?
   .left
-    = link_to "Home", root_path
-    = link_to "Benutzer", users_path
-    = link_to "Posts", posts_path
-    = link_to "Kontakt", contact_path
+    = link_to "Home", root_path, :class => "button"
+    = link_to "Benutzer", users_path, :class => "button"
+    = link_to "Posts", posts_path, :class => "button"
+    = link_to "Kontakt", contact_path, :class => "button"
   .right
-    = link_to current_user.email, current_user
-    = link_to "Log out", signout_path, :method => :delete
+    = link_to current_user.email, current_user, :class => "button"
+    = link_to "Log out", signout_path, :method => :delete, :class => "button"
 - else
   .right
-    = link_to "Log in", signin_path
-    = link_to "Create account", new_user_path
+    = link_to "Log in", signin_path, :class => "button"
+    = link_to "Create account", new_user_path, :class => "button"
