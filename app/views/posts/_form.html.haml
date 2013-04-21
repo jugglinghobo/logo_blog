@@ -7,6 +7,7 @@
         = @post.errors.full_messages.each do |msg|
           = msg
   .field
+    = f.input :header
     = f.input :content, :as => :text
     = f.association :user, :as => :hidden, :input_html => {:value => current_user.id}
   .actions

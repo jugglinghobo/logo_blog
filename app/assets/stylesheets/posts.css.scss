@@ -12,6 +12,17 @@
   margin: 10px;
 }
 
-.post_content_box {
+.post_header input {
+  width: 500px;
+  height: 20px;
+  font-size: 120%;
+}
+
+.post_content textarea {
+  width: 500px;
+  height: 90px;
+}
+
+.post {
   margin: 20px;
 }

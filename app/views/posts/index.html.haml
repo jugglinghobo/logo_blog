@@ -1,10 +1,10 @@
-#sorting
+#sorting.inline
   = link_to "newest", "#", :class => "button"
   = link_to "most interesting", "#", :class => "button"
   = link_to "other category", "#", :class => "button"
+- if signed_in?
+  #action_box.inline
+    = link_to 'New Post', new_post_path
 - @posts.each do |post|
   = render "post_box", :post => post
 
-- if signed_in?
-  #action_box
-    = link_to 'New Post', new_post_path

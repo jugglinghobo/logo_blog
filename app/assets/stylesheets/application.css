@@ -35,6 +35,9 @@ a.button {
   border-radius: 5px;
 }
 
+.inline {
+  display: inline-block;
+}
 
 #container {
   background-color: white;
@@ -88,7 +91,7 @@ a.button {
   -moz-border-radius: 3px;
   border-radius: 3px;
   padding: 20px;
-  margin: 40px;
+  margin: 10px;
 }
 
 #action_box a {
