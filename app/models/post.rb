@@ -3,5 +3,9 @@ class Post < ActiveRecord::Base
   
   belongs_to :user
 
+  def responses
+    ["a", "b", "c"]
+  end
+
 
 end
