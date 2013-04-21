@@ -8,6 +8,6 @@
           = msg
   .field
     = f.input :content, :as => :text
-    = f.association :user
+    = f.association :user, :as => :hidden, :input_html => {:value => current_user.id}
   .actions
     = f.submit

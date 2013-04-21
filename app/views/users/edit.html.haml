@@ -1,6 +1,19 @@
-<h1>Editing user</h1>
+%h1= "Edit User"
 
-<%= render 'form' %>
+= simple_form_for(@user) do |f|
+  - if @user.errors.any?
+    #error_explanation
+      = "#{pluralize(@user.errors.count, "error")} prohibited this user from being saved"
+      - @user.errors.full_messages.each do |msg|
+        = msg
+  .field
+    = f.input :name
+  .field 
+    = f.input :email
+  .field
+    = f.input :password
+  .actions
+    = f.submit "Save"
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+= link_to 'Show', @user
+= link_to 'Back', users_path
