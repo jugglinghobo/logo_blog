@@ -13,3 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require fartscroll
+//
+//
+$(document).ready(function() {
+	$(document).fartscroll(30);	
+});
